@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NUTRIVA: tienda de nutrición deportiva y bienestar.">
+  <title>NUTRIVA | Nutrición deportiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">NUTRICIÓN DEPORTIVA · INFORMACIÓN CLARA · COMPRA CON CONFIANZA</div>
+  <header class="site-header container">
+    <a class="logo" href="#" aria-label="NUTRIVA inicio">NUTRI<span>V</span>A<sup>®</sup></a>
+    <nav class="header-actions">
+      <a class="button button-light" href="#ayuda">¿Dudas?</a>
+      <button class="button" id="open-cart" type="button">🛒 Carrito <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TU BIENESTAR, CON INFORMACIÓN</p>
+        <h1>Tu rutina.<br>Tu ritmo.</h1>
+        <p class="lead">Explora productos de nutrición deportiva, conoce sus características y encuentra respuestas antes de elegir.</p>
+        <a class="button" href="#catalogo">EXPLORAR PRODUCTOS ↘</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-orbit"></div><div class="hero-jar">🫙</div>
+        <span class="hero-caption">MOVE WITH PURPOSE</span>
+      </div>
+    </section>
+
+    <section id="catalogo" class="catalog-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">CATÁLOGO</p><h2>Encuentra tu producto</h2></div>
+        <span class="muted" id="result-count">8 productos</span>
+      </div>
+      <label class="search-label" for="search">Buscar productos</label>
+      <input id="search" class="search" type="search" placeholder="⌕ Buscar proteína, creatina, vitaminas...">
+      <div class="filters" id="filters" aria-label="Filtrar por categoría">
+        <button class="chip active" data-category="Todos">Todos</button>
+        <button class="chip" data-category="Proteínas">Proteínas</button>
+        <button class="chip" data-category="Rendimiento">Rendimiento</button>
+        <button class="chip" data-category="Bienestar">Bienestar</button>
+        <button class="chip" data-category="Accesorios">Accesorios</button>
+      </div>
+      <div class="products-grid" id="products"></div>
+    </section>
+
+    <section class="benefits" aria-label="Ventajas de la tienda">
+      <article class="benefit"><span class="benefit-icon">🔎</span><h3>Información transparente</h3><p>Consulta ingredientes, formato y características de cada producto.</p></article>
+      <article class="benefit"><span class="benefit-icon">💬</span><h3>Resuelve tus dudas</h3><p>Accede a respuestas generales y descubre cuándo consultar a un profesional.</p></article>
+      <article class="benefit"><span class="benefit-icon">🛍️</span><h3>Carrito sencillo</h3><p>Añade productos, cambia cantidades y revisa el resumen de tu pedido.</p></article>
+    </section>
+
+    <section id="ayuda" class="help-section">
+      <p class="eyebrow">CENTRO DE AYUDA</p>
+      <h2>¿Tienes alguna duda?</h2>
+      <p class="lead">Consulta las preguntas frecuentes o abre el asistente de ayuda.</p>
+      <div class="faq">
+        <details><summary>¿Cómo sé qué producto es adecuado para mí?</summary><p>Depende de tu alimentación, salud, edad y actividad. Empieza por una alimentación equilibrada y consulta a un profesional sanitario o dietista-nutricionista antes de usar suplementos, especialmente si eres menor de edad.</p></details>
+        <details><summary>¿Qué ingredientes contiene cada producto?</summary><p>En esta demo se muestran descripciones orientativas. Una tienda real debe incluir el etiquetado completo, alérgenos, ingredientes e información del fabricante verificada.</p></details>
+        <details><summary>¿Puedo comprar directamente desde esta página?</summary><p>Puedes añadir productos y simular un pedido. El pago no está conectado: para vender de verdad necesitarás una plataforma de comercio electrónico y una pasarela de pago segura.</p></details>
+        <details><summary>¿Los suplementos sustituyen una buena alimentación?</summary><p>No. Los suplementos no sustituyen una alimentación variada ni el consejo de un profesional sanitario. No todos son adecuados para todas las personas.</p></details>
+      </div>
+      <button class="button help-button" id="open-assistant" type="button">💬 Preguntar al asistente</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="logo footer-logo" href="#">NUTRI<span>V</span>A<sup>®</sup></a>
+      <p>Nutrición deportiva con información clara.<br>Catálogo y proceso de compra de demostración.</p>
+      <div class="footer-bottom">© 2026 NUTRIVA · Proyecto de tienda demo. No se procesan pagos reales.</div>
+    </div>
+  </footer>
+
+  <div id="modal-root"></div>
+  <script src="script.js"></script>
+</body>
+</html>
